@@ -1,0 +1,412 @@
+
+os=/Users/crooter/Projects/onestop CD=~/Projects/onestop {
+ application.php
+ app=app {
+  clients=clients {
+   Crypt.php
+   Search.php
+  }
+  files=files {
+   blank.pdf
+  }
+  helpers=helpers {
+   action=action {
+    GetLocations.php
+    ImageChecker.php
+    IsCreditCardTerm.php
+    LoggedIn.php
+    Paginator.php
+    PickupTimeGen.php
+    SendMail.php
+   }
+   view=view {
+    CartInformation.php
+    CartInformation.php.orig
+    DisplayErrors.php
+    GenCart.php
+    GenCartLine.php
+    GetPrice.php
+    Hierarchy.php
+    Image.php
+    LoggedIn.php
+    LoginRedirectUrl.php
+    MaxAllowed.php
+    ModelsToJson.php
+    NewNews.php
+    SizeSpecs.php
+    SkuPagePriceSelect.php
+   }
+  }
+  models=models {
+   Cart.php
+   User.php
+  }
+  modules=modules {
+   about=about {
+    controllers=controllers {
+     ApplicationController.php
+     EmploymentController.php
+     IndexController.php
+    }
+    views=views {
+     scripts=scripts {
+      application=application {
+       errors.phtml
+       index.phtml
+       success.phtml
+      }
+      employment=employment {
+       index.phtml
+       job.phtml
+      }
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+   cart=cart {
+    controllers=controllers {
+     AddController.php
+     EmptyController.php
+     IndexController.php
+     RemoveController.php
+     SaveController.php
+     SavedController.php
+     UpdateController.php
+    }
+    views=views {
+     scripts=scripts {
+      index=index {
+       index.phtml
+      }
+      save=save {
+       index.phtml
+      }
+      saved=saved {
+       index.phtml
+      }
+     }
+    }
+   }
+   catalog=catalog {
+    controllers=controllers {
+     BrandsController.php
+     IndexController.php
+     SkuController.php
+     SkuController.php.orig
+    }
+    views=views {
+     scripts=scripts {
+      brands=brands {
+       index.phtml
+      }
+      index=index {
+       index.phtml
+      }
+      partials=partials {
+       __categories_catalog.phtml
+       __categories_catalog.phtml.orig
+       __categories_closeout.phtml
+       __categories_supplies.phtml
+       __colors.phtml
+       __inventory.phtml
+       __inventory.phtml.orig
+      }
+      sku=sku {
+       index.phtml
+       index.phtml.orig
+      }
+     }
+    }
+   }
+   dashboard=dashboard {
+    controllers=controllers {
+     BankaccountsController.php
+     ContactController.php
+     IndexController.php
+     OrderController.php
+    }
+    views=views {
+     scripts=scripts {
+      bankaccounts=bankaccounts {
+       index.phtml
+      }
+      contact=contact {
+       hintrecovery.phtml
+       login.phtml
+      }
+      index=index {
+       index.phtml
+      }
+      mail=mail {
+       acctinfo.txt
+       confirm.phtml
+       confirm.phtml.orig
+       csr_confirm.txt
+       pwdchange.txt
+      }
+      order=order {
+       addaddress.phtml
+       checkout.phtml
+       detail.phtml
+       finalize.phtml
+       finalize.phtml.orig
+       history.phtml
+       lowinventory.phtml
+       review.phtml
+       review.phtml.orig
+       shippingmethod.phtml
+       success.phtml
+       verifyorder.phtml
+       verifyorder.phtml.orig
+      }
+     }
+    }
+   }
+   default=default {
+    controllers=controllers {
+     CatalogrequestController.php
+     ErrorController.php
+     IndexController.php
+     LinksController.php
+     OnsaleController.php
+     SearchController.php
+     ServiceController.php
+     ServiceController.php.orig
+     SpecialsController.php
+     WeeklysignupController.php
+    }
+    views=views {
+     scripts=scripts {
+      catalogrequest=catalogrequest {
+       index.phtml
+       success.phtml
+      }
+      error=error {
+       error.phtml
+      }
+      index=index {
+       index.phtml
+      }
+      links=links {
+       index.phtml
+      }
+      mail=mail {
+       register.txt
+      }
+      onsale=onsale {
+       index.phtml
+      }
+      search=search {
+       index.phtml
+      }
+      service=service {
+       contact.phtml
+       forms.phtml
+       location.phtml
+       millmaps.phtml
+       msds.phtml
+       newcustomer.phtml
+       orderinformation.phtml
+       privacypolicy.phtml
+       register.phtml
+       shippingpolicy.phtml
+       successful.phtml
+      }
+      specials=specials {
+       index.phtml
+      }
+      weeklysignup=weeklysignup {
+       index.phtml
+       success.phtml
+      }
+     }
+    }
+   }
+   express=express {
+    controllers=controllers {
+     CartController.php
+     IndexController.php
+     LookupController.php
+     LookupController.php.orig
+    }
+    views=views {
+     scripts=scripts {
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+   marketingtools=marketingtools {
+    controllers=controllers {
+     CatalogsController.php
+     DigitalcatalogController.php
+     ElectronicpricelistController.php
+     GenericwebsiteController.php
+     ImprintedcatalogsController.php
+     IndexController.php
+     MerchandisedisplaysController.php
+     NewsController.php
+     PricelistsController.php
+     SamplesController.php
+     SecController.php
+     SrbController.php
+     SuccessController.php
+     TradeshowsController.php
+    }
+    views=views {
+     scripts=scripts {
+      catalogs=catalogs {
+       index.phtml
+      }
+      digitalcatalog=digitalcatalog {
+       index.phtml
+      }
+      electronicpricelist=electronicpricelist {
+       index.phtml
+      }
+      genericwebsite=genericwebsite {
+       index.phtml
+      }
+      imprintedcatalogs=imprintedcatalogs {
+       index.phtml
+       index.phtml.orig
+      }
+      index=index {
+       index.phtml
+      }
+      mail=mail {
+       display_room_kits.phtml
+       display_room_kits.txt
+       imprinted_catalogs.phtml
+       imprinted_catalogs.txt
+      }
+      merchandisedisplays=merchandisedisplays {
+       displaykits.phtml
+       hangers.phtml
+       index.phtml
+      }
+      news=news {
+       flyer.phtml
+       index.phtml
+       story.phtml
+      }
+      pricelists=pricelists {
+       index.phtml
+      }
+      samples=samples {
+       index.phtml
+      }
+      sec=sec {
+       index.phtml
+      }
+      srb=srb {
+       index.phtml
+      }
+      success=success {
+       index.phtml
+      }
+      tradeshows=tradeshows {
+       index.phtml
+       show.phtml
+      }
+     }
+    }
+   }
+  }
+  themes=themes {
+   basic=basic {
+    about.phtml
+    base.phtml
+    blank.phtml
+    dashboard.phtml
+    dashboard.phtml.orig
+    express.phtml
+    maintenance.phtml
+    marketingtools.phtml
+    onsale.phtml
+    partials=partials {
+     __user.phtml
+    }
+   }
+  }
+ }
+ config=config {
+  app.ini
+ }
+ public=public {
+  favicon.ico
+  index.php
+  robots.txt
+  sitemap.xml
+  css=css {
+   print.css
+  }
+  downloads=downloads {
+   2009 ONE STOP Supply Catalog.pdf
+   CredtAppl.pdf
+   FCCFaxForm.pdf
+   FaxAuthorizeForm.pdf
+   Game_SpecialOrderForm.pdf
+   MultiTaxExempt.pdf
+   OSApplication.2009.pdf
+   ResaleTaxID.pdf
+   SampleOrderForm.pdf
+   Tommy Hilfiger Purchasing Agreement 2009.doc
+   pricelist.xls
+  }
+  images=images {
+   buttons=buttons {
+   }
+   colors=colors {
+    AO-40jpg
+   }
+   content=content {
+   }
+   detail=detail {
+   }
+   express=express {
+   }
+   icons=icons {
+   }
+   info=info {
+   }
+   mills=mills {
+   }
+   mktgtools=mktgtools {
+    digitalcatalog=digitalcatalog {
+    }
+    imprints=imprints {
+    }
+   }
+   skus=skus {
+    standard=standard {
+    }
+    thumbnails=thumbnails {
+    }
+   }
+  }
+  js=js {
+   app.js
+   dashboard.js
+   express.js
+   jquery.cycle.js
+   jquery.js
+   pngfix.js
+   ui.jquery.datepicker.js
+  }
+  themes=themes {
+   basic=basic {
+    basic.css
+    basic.css.orig
+    express.css
+    maintenance.css
+   }
+  }
+ }
+ scripts=scripts {
+  pg_carts_to_mongo_carts.py
+ }
+}

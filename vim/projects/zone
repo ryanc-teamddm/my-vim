@@ -1,0 +1,147 @@
+
+zone=/Users/crooter/Projects/zone CD=~/Projects/zone {
+ Crypt.php
+ Sphinx.php
+ Common=Common {
+  Gateways=Gateways {
+   BankAccountGateway.php
+   BannerGateway.php
+   CartGateway.php
+   CatalogLineItemGateway.php
+   CatalogOrderGateway.php
+   CatalogRequestGateway.php
+   CategoryGateway.php
+   CheckEntryGateway.php
+   ColorGateway.php
+   ConfigGateway.php
+   ConnectivityLogGateway.php
+   ContactGateway.php
+   DisplayRoomKitLineItemGateway.php
+   DisplayRoomKitOrderGateway.php
+   HolidayGateway.php
+   ItemGateway.php
+   JobGateway.php
+   LocationGateway.php
+   LoginAttemptGateway.php
+   MillGateway.php
+   NewCustomerDataGateway.php
+   NewsFlyerGateway.php
+   NewsGateway.php
+   OrderGateway.php
+   RegisterGateway.php
+   SaleGateway.php
+   SkuGateway.php
+   SpecialGateway.php
+   TrackingNumberGateway.php
+   TradeshowGateway.php
+   WebCartGateway.php
+   WebOrderGateway.php
+   WeeklySignupGateway.php
+  }
+  Models=Models {
+   Address.php
+   BankAccount.php
+   Banner.php
+   Cart.php
+   CartLines.php
+   CatalogLineItem.php
+   CatalogOrder.php
+   CatalogRequest.php
+   Category.php
+   CheckEntry.php
+   Color.php
+   Config.php
+   ConnectivityLog.php
+   Contact.php
+   DisplayRoomKitLineItem.php
+   DisplayRoomKitOrder.php
+   EmpApplicationAvailability.php
+   EmpApplicationEducation.php
+   EmpApplicationHistory.php
+   EmpApplicationHistory.php.orig
+   EmpApplicationOtherInformation.php
+   EmpApplicationPersonalInformation.php
+   EmpApplicationReference.php
+   Holiday.php
+   Item.php
+   Job.php
+   Location.php
+   LoginAttempt.php
+   Mill.php
+   NewCustomerData.php
+   News.php
+   NewsFlyer.php
+   Order.php
+   Register.php
+   Sale.php
+   Sku.php
+   Special.php
+   TrackingNumber.php
+   Tradeshow.php
+   User.php
+   WebCart.php
+   WebOrder.php
+   WeeklySignup.php
+  }
+ }
+ Model=Model {
+  Abstract.php
+  DbAbstract.php
+  Exception.php
+  MongoAbstract.php
+  SessionAbstract.php
+  VicsAbstract.php
+  Gateway=Gateway {
+   Abstract.php
+   Exception.php
+   Db=Db {
+    Abstract.php
+    Exception.php
+   }
+   Mongo=Mongo {
+    Abstract.php
+    Exception.php
+   }
+   Vics=Vics {
+    Abstract.php
+    Exception.php
+   }
+  }
+ }
+ Mongo=Mongo {
+  Adapter.php
+  Exception.php
+ }
+ Parsers=Parsers {
+  Abstract.php
+  Interface.php
+  SizeSpecs=SizeSpecs {
+   Parser.php
+   Size.php
+  }
+ }
+ Sphinx=Sphinx {
+  Client.php
+  Exception.php
+  Client=Client {
+   Exception.php
+  }
+ }
+ Validate=Validate {
+  Date.php
+  FirstCharAlpha.php
+  Image.php
+  RoutingNumber.php
+  StringLength.php
+  Url.php
+ }
+ Vics=Vics {
+  Driver.php
+  Exception.php
+  Interface.php
+  Adapter=Adapter {
+   Abstract.php
+   XmlCommander.php
+  }
+ }
+}

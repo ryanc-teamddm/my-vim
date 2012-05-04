@@ -1,0 +1,15 @@
+
+generic=/Users/crooter/Projects/generic_catalog CD=~/Projects/generic_site {
+ app.php
+ app=app {
+  controllers=controllers {
+  }
+  models=models {
+  }
+  views=views {
+  }
+ }
+ public=public {
+  index.php
+ }
+}

@@ -1,0 +1,211 @@
+
+intranet=/Users/crooter/Projects/intranet CD=~/Projects/intranet {
+ application=application {
+  Bootstrap.php
+  configs=configs {
+   application.ini
+  }
+  controllers=controllers {
+   ErrorController.php
+   IadminController.php
+   IndexController.php
+   UsersController.php
+  }
+  layouts=layouts {
+   layout.phtml
+   users.phtml
+   partials=partials {
+    header.phtml
+    navigation.phtml
+   }
+  }
+  modules=modules {
+   credit=credit {
+    Bootstrap.php
+    controllers=controllers {
+     IndexController.php
+    }
+    views=views {
+     scripts=scripts {
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+   customer_service=customer_service {
+    Bootstrap.php
+    controllers=controllers {
+     CheckbyphoneController.php
+     IndexController.php
+    }
+    views=views {
+     scripts=scripts {
+      checkbyphone=checkbyphone {
+       index.phtml
+      }
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+   it=it {
+    Bootstrap.php
+    controllers=controllers {
+     IndexController.php
+    }
+    views=views {
+     scripts=scripts {
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+  }
+  views=views {
+   scripts=scripts {
+    error=error {
+     error.phtml
+    }
+    index=index {
+     index.phtml
+    }
+    users=users {
+     index.phtml
+     login.phtml
+    }
+   }
+  }
+ }
+ library=library {
+  Intranet=Intranet {
+   Admin=Admin {
+    Controller.php
+    sql=sql {
+     permissions.sql
+    }
+    views=views {
+     scripts=scripts {
+      adduser.phtml
+      app.phtml
+      error.phtml
+      index.phtml
+      users.phtml
+     }
+    }
+   }
+   Basics=Basics {
+    Crypt.php
+    Controller=Controller {
+     Users.php
+    }
+    Models=Models {
+     Permissions.php
+     Users.php
+    }
+    sql=sql {
+     users.sql
+    }
+   }
+   CheckByPhone=CheckByPhone {
+    Controller.php
+    Models=Models {
+     Accounts.php
+     Entries.php
+     Permissions.php
+    }
+    sql=sql {
+     entries.sql
+     permissions.sql
+    }
+    views=views {
+     scripts=scripts {
+      accountdetail.phtml
+      accountlookup.phtml
+      archive.phtml
+      cancel.phtml
+      cancellookup.phtml
+      detail.phtml
+      entry.phtml
+      error.phtml
+      generateccdbankfile.phtml
+      generatetelephonebankfile.phtml
+      generatewebbankfile.phtml
+      index.phtml
+      pendinglist.phtml
+     }
+    }
+   }
+   Controller=Controller {
+    Action.php
+    Extension.php
+    Action=Action {
+     Exception.php
+     Helper=Helper {
+      HasPermission.php
+     }
+     Permission=Permission {
+      Exception.php
+     }
+    }
+   }
+   View=View {
+    Helper=Helper {
+     DisplayErrors.php
+     DisplayFlash.php
+     HasPermission.php
+     LoggedIn.php
+     Paginate.php
+    }
+   }
+  }
+ }
+ public=public {
+  index.php
+  css=css {
+   cupertino=cupertino {
+    jquery-ui-1.7.2.custom.css
+    images=images {
+    }
+   }
+   intranet=intranet {
+    basic.css
+   }
+  }
+  images=images {
+   logos=logos {
+   }
+  }
+  js=js {
+   jquery-1.3.2.min.js
+   jquery-ui-1.7.2.custom.min.js
+  }
+ }
+ scripts=scripts {
+  encrypt_old_data.php
+  load_sql.py
+  load_users.py
+  test
+ }
+ tests=tests {
+  ControllerTestCase.php
+  TestHelper.php
+  phpunit.xml
+  application=application {
+   bootstrap.php
+   controllers=controllers {
+    CheckbyphoneControllerTest.php
+    IndexControllerTest.php
+    UsersControllerTest.php
+   }
+  }
+  library=library {
+   bootstrap.php
+  }
+  models=models {
+   UserTest.php
+  }
+ }
+}

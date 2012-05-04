@@ -1,0 +1,759 @@
+admin=/Users/crooter/Projects/admin CD=~/Projects/admin {
+ application.php
+ app=app {
+  clients=clients {
+   Search.php
+  }
+  controllers=controllers {
+   AccountController.php
+   CacheController.php
+   CatalogController.php
+   ErrorController.php
+   IndexController.php
+   OrdersController.php
+  }
+  helpers=helpers {
+   action=action {
+    GetLocations.php
+    LoggedIn.php
+    Paginator.php
+   }
+   view=view {
+    BaseUrl.php
+    CategoryMenu.php
+    CategoryMenuJson.php
+    DisplayErrors.php
+    DisplayFlash.php
+    EditHierarchy.php
+    LoggedIn.php
+   }
+  }
+  layouts=layouts {
+   base.phtml
+   partials=partials {
+    __footer.phtml
+    __header.phtml
+    __navigation.phtml
+   }
+  }
+  models=models {
+   User.php
+  }
+  modules=modules {
+   auth=auth {
+    controllers=controllers {
+     LoginController.php
+     LogoutController.php
+    }
+    views=views {
+     scripts=scripts {
+      login=login {
+       index.phtml
+      }
+      logout=logout {
+       index.phtml
+      }
+     }
+    }
+   }
+   catalog=catalog {
+    controllers=controllers {
+     CategoriesController.php
+     IndexController.php
+     MillsController.php
+     SkusController.php
+    }
+    views=views {
+     scripts=scripts {
+      categories=categories {
+       add.phtml
+       edit.phtml
+       index.phtml
+      }
+      index=index {
+       index.phtml
+      }
+      mills=mills {
+       edit.phtml
+       index.phtml
+      }
+      skus=skus {
+       categories.phtml
+       edit.phtml
+       index.phtml
+      }
+     }
+    }
+   }
+   contact=contact {
+    controllers=controllers {
+     RegistersController.php
+    }
+    views=views {
+     scripts=scripts {
+      registers=registers {
+       add.phtml
+       edit.phtml
+       index.phtml
+      }
+     }
+    }
+   }
+   default=default {
+    controllers=controllers {
+     AccountController.php
+     IndexController.php
+    }
+    views=views {
+     scripts=scripts {
+      index=index {
+       index.phtml
+      }
+     }
+    }
+   }
+   orders=orders {
+    controllers=controllers {
+     CatalogrequestsController.php
+     DeleteController.php
+     DetailsController.php
+     DisplaykitsController.php
+     GenericcatalogsController.php
+     HoldsController.php
+     IndexController.php
+     LookupController.php
+     ProcessController.php
+    }
+    views=views {
+     scripts=scripts {
+      catalogrequests=catalogrequests {
+       index.phtml
+       view.phtml
+      }
+      details=details {
+       index.phtml
+      }
+      displaykits=displaykits {
+       index.phtml
+       view.phtml
+      }
+      genericcatalogs=genericcatalogs {
+       index.phtml
+       view.phtml
+      }
+      holds=holds {
+       index.phtml
+      }
+      index=index {
+       index.phtml
+      }
+      lookup=lookup {
+       index.phtml
+      }
+     }
+    }
+   }
+   web=web {
+    controllers=controllers {
+     BannersController.php
+     ConnectivityController.php
+     HolidaysController.php
+     JobsController.php
+     MillorderController.php
+     NewsController.php
+     NewsflyersController.php
+     SalesController.php
+     SpecialsController.php
+     StatisticsController.php
+     TradeshowsController.php
+     WeeklysignupsController.php
+    }
+    views=views {
+     scripts=scripts {
+      banners=banners {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+       preview.phtml
+      }
+      connectivity=connectivity {
+       add.phtml
+       index.phtml
+      }
+      holidays=holidays {
+       add.phtml
+       edit.phtml
+       index.phtml
+      }
+      jobs=jobs {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      millorder=millorder {
+       edit.phtml
+       index.phtml
+      }
+      news=news {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      newsflyers=newsflyers {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      sales=sales {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      specials=specials {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      statistics=statistics {
+       index.phtml
+      }
+      tradeshows=tradeshows {
+       add.phtml
+       edit.phtml
+       index.phtml
+       list.phtml
+      }
+      weeklysignups=weeklysignups {
+       index.phtml
+       view.phtml
+      }
+     }
+    }
+   }
+  }
+  views=views {
+   scripts=scripts {
+    account=account {
+     login.phtml
+    }
+    catalog=catalog {
+     categories.phtml
+     colors.phtml
+     mills.phtml
+     sizes.phtml
+     skus.phtml
+    }
+    contact=contact {
+     addmanually.phtml
+     editaccount.phtml
+     manageaccounts.phtml
+     manageadminaccounts.phtml
+     processrequest.phtml
+    }
+    error=error {
+     error.phtml
+    }
+    index=index {
+     index.phtml
+    }
+    mail=mail {
+     register.txt
+    }
+    orders=orders {
+     addmsg.phtml
+     catalogrequests.phtml
+     delete.phtml
+     deleted.phtml
+     displayroomkits.phtml
+     genericcatalogs.phtml
+     hold.phtml
+     lookup.phtml
+     onhold.phtml
+     processed.phtml
+     review.phtml
+     today.phtml
+    }
+    web=web {
+     banner_preview.phtml
+     banners.phtml
+     connectivity.phtml
+     holidays.phtml
+     jobs.phtml
+     millorder.phtml
+     news.phtml
+     newsflyer.phtml
+     sales.phtml
+     specials.phtml
+     statistics.phtml
+     tradeshows.phtml
+     weeklysignups.phtml
+    }
+   }
+  }
+ }
+ config=config {
+  app.ini
+ }
+ public=public {
+  index.php
+  robots.txt
+  css=css {
+   jquery.date.ui.css
+   layout.css
+   typo.css
+   blueprint=blueprint {
+    forms.css
+    grid.css
+    ie.css
+    print.css
+    reset.css
+    typography.css
+   }
+  }
+  images=images {
+   catalogUploads=catalogUploads {
+    1223060153=1223060153 {
+    }
+    1223060165=1223060165 {
+    }
+    1223060193=1223060193 {
+    }
+   }
+  }
+  js=js {
+   accounts.js
+   banners.js
+   catalog_orders.js
+   catalog_requests.js
+   categories.js
+   colors.js
+   connectivity.js
+   display_kits.js
+   domready.js
+   holidays.js
+   jobs.js
+   jquery-1.3.2.min.js
+   jquery-ui-1.7.3.custom.min.js
+   jquery.cycle.js
+   jquery.js
+   jquery.scrollto.js
+   logins.js
+   mill.js
+   news.js
+   newsflyers.js
+   register.js
+   sales.js
+   skus.js
+   specials.js
+   sqlorder.js
+   table.js
+   tradeshows.js
+   ui.jquery.datepicker.js
+   web_orders.js
+   weekly_signups.js
+   tiny_mce=tiny_mce {
+    license.txt
+    tiny_mce.js
+    tiny_mce_popup.js
+    tiny_mce_src.js
+    langs=langs {
+     en.js
+    }
+    plugins=plugins {
+     advhr=advhr {
+      editor_plugin.js
+      editor_plugin_src.js
+      rule.htm
+      css=css {
+       advhr.css
+      }
+      js=js {
+       rule.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     advimage=advimage {
+      editor_plugin.js
+      editor_plugin_src.js
+      image.htm
+      css=css {
+       advimage.css
+      }
+      img=img {
+      }
+      js=js {
+       image.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     advlink=advlink {
+      editor_plugin.js
+      editor_plugin_src.js
+      link.htm
+      css=css {
+       advlink.css
+      }
+      js=js {
+       advlink.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     autosave=autosave {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     bbcode=bbcode {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     compat2x=compat2x {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     contextmenu=contextmenu {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     directionality=directionality {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     emotions=emotions {
+      editor_plugin.js
+      editor_plugin_src.js
+      emotions.htm
+      img=img {
+      }
+      js=js {
+       emotions.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     example=example {
+      dialog.htm
+      editor_plugin.js
+      editor_plugin_src.js
+      img=img {
+      }
+      js=js {
+       dialog.js
+      }
+      langs=langs {
+       en.js
+       en_dlg.js
+      }
+     }
+     fullpage=fullpage {
+      editor_plugin.js
+      editor_plugin_src.js
+      fullpage.htm
+      css=css {
+       fullpage.css
+      }
+      js=js {
+       fullpage.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     fullscreen=fullscreen {
+      editor_plugin.js
+      editor_plugin_src.js
+      fullscreen.htm
+     }
+     iespell=iespell {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     inlinepopups=inlinepopups {
+      editor_plugin.js
+      editor_plugin_src.js
+      template.htm
+      skins=skins {
+       clearlooks2=clearlooks2 {
+        window.css
+        img=img {
+        }
+       }
+      }
+     }
+     insertdatetime=insertdatetime {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     layer=layer {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     media=media {
+      editor_plugin.js
+      editor_plugin_src.js
+      media.htm
+      css=css {
+       content.css
+       media.css
+      }
+      img=img {
+       flv_player.swf
+      }
+      js=js {
+       embed.js
+       media.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     nonbreaking=nonbreaking {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     noneditable=noneditable {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     pagebreak=pagebreak {
+      editor_plugin.js
+      editor_plugin_src.js
+      css=css {
+       content.css
+      }
+      img=img {
+      }
+     }
+     paste=paste {
+      blank.htm
+      editor_plugin.js
+      editor_plugin_src.js
+      pastetext.htm
+      pasteword.htm
+      css=css {
+       blank.css
+       pasteword.css
+      }
+      js=js {
+       pastetext.js
+       pasteword.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     preview=preview {
+      editor_plugin.js
+      editor_plugin_src.js
+      example.html
+      jscripts=jscripts {
+       embed.js
+      }
+     }
+     print=print {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     safari=safari {
+      blank.htm
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     save=save {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     searchreplace=searchreplace {
+      editor_plugin.js
+      editor_plugin_src.js
+      searchreplace.htm
+      css=css {
+       searchreplace.css
+      }
+      js=js {
+       searchreplace.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     spellchecker=spellchecker {
+      editor_plugin.js
+      editor_plugin_src.js
+      css=css {
+       content.css
+      }
+      img=img {
+      }
+     }
+     style=style {
+      editor_plugin.js
+      editor_plugin_src.js
+      props.htm
+      css=css {
+       props.css
+      }
+      js=js {
+       props.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     table=table {
+      cell.htm
+      editor_plugin.js
+      editor_plugin_src.js
+      merge_cells.htm
+      row.htm
+      table.htm
+      css=css {
+       cell.css
+       row.css
+       table.css
+      }
+      js=js {
+       cell.js
+       merge_cells.js
+       row.js
+       table.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     template=template {
+      blank.htm
+      editor_plugin.js
+      editor_plugin_src.js
+      template.htm
+      css=css {
+       template.css
+      }
+      js=js {
+       template.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+     visualchars=visualchars {
+      editor_plugin.js
+      editor_plugin_src.js
+     }
+     xhtmlxtras=xhtmlxtras {
+      abbr.htm
+      acronym.htm
+      attributes.htm
+      cite.htm
+      del.htm
+      editor_plugin.js
+      editor_plugin_src.js
+      ins.htm
+      css=css {
+       attributes.css
+       popup.css
+      }
+      js=js {
+       abbr.js
+       acronym.js
+       attributes.js
+       cite.js
+       del.js
+       element_common.js
+       ins.js
+      }
+      langs=langs {
+       en_dlg.js
+      }
+     }
+    }
+    themes=themes {
+     advanced=advanced {
+      about.htm
+      anchor.htm
+      charmap.htm
+      color_picker.htm
+      editor_template.js
+      editor_template_src.js
+      image.htm
+      link.htm
+      source_editor.htm
+      img=img {
+      }
+      js=js {
+       about.js
+       anchor.js
+       charmap.js
+       color_picker.js
+       image.js
+       link.js
+       source_editor.js
+      }
+      langs=langs {
+       en.js
+       en_dlg.js
+      }
+      skins=skins {
+       default=default {
+        content.css
+        dialog.css
+        ui.css
+        img=img {
+        }
+       }
+       o2k7=o2k7 {
+        content.css
+        dialog.css
+        ui.css
+        ui_black.css
+        ui_silver.css
+        img=img {
+        }
+       }
+      }
+     }
+     simple=simple {
+      editor_template.js
+      editor_template_src.js
+      img=img {
+      }
+      langs=langs {
+       en.js
+      }
+      skins=skins {
+       default=default {
+        content.css
+        ui.css
+       }
+       o2k7=o2k7 {
+        content.css
+        ui.css
+        img=img {
+        }
+       }
+      }
+     }
+    }
+    utils=utils {
+     editable_selects.js
+     form_utils.js
+     mctabs.js
+     validate.js
+    }
+   }
+  }
+ }
+}
