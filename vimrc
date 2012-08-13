@@ -19,8 +19,8 @@ set wildmode=list:longest
 
 "UI
 syntax on
-:colorscheme solarized
-set background=dark
+:colorscheme zenburn
+set background=light
 set t_Co=256
 set cursorcolumn
 set cursorline
@@ -46,7 +46,7 @@ set sidescrolloff=10
 set guioptions-=T "remove toolbar
 
 "Text Formatting
-set completeopt = 
+set completeopt=
 "set expandtab
 set formatoptions=rq
 set ignorecase
@@ -54,9 +54,9 @@ set infercase
 set nowrap
 set shiftround
 set smartcase
-set shiftwidth=8
-set softtabstop=8
-set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
 "Folding
 set foldenable
@@ -101,7 +101,9 @@ nmap ,p :! php -q %<CR>
 if has("gui_running")
     autocmd VimEnter * NERDTree
     autocmd VimEnter * TagbarOpen
-    set guifont=Monaco:h10
+    set guifont=Monaco:h12
+	:colorscheme solarized
+	let g:solarized_contrast="low"
 endif
 
 " Ack Options
