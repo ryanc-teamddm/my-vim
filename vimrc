@@ -88,19 +88,19 @@ map <left> <nop>
 map <right> <nop>
 map <up> <nop>
 
-nmap ,n :NERDTreeToggle<ENTER>
-nmap ,t :TagbarToggle<ENTER>
+nmap ,n :NERDTreeToggle<CR>
+nmap ,m :TagbarToggle<CR>
 noremap ,a :Ack
-nmap <leader>ff :FufFile **/<CR>
-nmap <leader>fb :FufBuffer<CR>
+nmap ,t :CommandT<CR>
+nmap ,b :CommandTBuffer<CR>
 " PHP lint checker
 nmap ,p :! php -l %<CR>
 " Executes PHP file
 nmap ,p :! php -q %<CR>
 
+autocmd VimEnter * NERDTree
+autocmd VimEnter * TagbarOpen
 if has("gui_running")
-    autocmd VimEnter * NERDTree
-    autocmd VimEnter * TagbarOpen
     set guifont=Monaco:h12
 	:colorscheme solarized
 	let g:solarized_contrast="low"
